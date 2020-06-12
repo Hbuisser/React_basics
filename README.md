@@ -1,4 +1,4 @@
-# react-boilerplate
+# React basics
 
 Simple react starter with the following config:
 

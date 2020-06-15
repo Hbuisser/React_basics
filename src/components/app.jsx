@@ -12,6 +12,7 @@ class App extends Component {
     this.state = {
       gifs: [],
       selectedGifId: "Mo9nI2yBKp3RC/200.webp?cid=ecf05e47926964281ebac189d1b3a42312aa6bfaa2b17c88&rid="
+      //selectedGif: {}
     };
 
     this.search("Anakin");

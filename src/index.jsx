@@ -7,8 +7,7 @@ import App from './components/app.jsx';
 // const Hello = ({ name }) => {
 //   return (
 //     <div>
-//       Hello,
-//       {name}
+//       Hello, {name}
 //     </div>
 //   );
 // };
@@ -39,9 +38,10 @@ class Hello extends Component {
   render() {
     // BUILD and RETURN html for the component
     return (
-      <div className={this.state.clicked ? 'clicked' : null}
-          onClick={this.handleClick}>
-        Hello {this.props.name} {this.state.counter}
+      <div
+        className={this.state.clicked ? 'clicked' : null}
+        onClick={this.handleClick}>
+          Hello {this.props.name} {this.state.counter}
       </div>
     )
   }

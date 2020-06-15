@@ -18,15 +18,16 @@ class App extends Component {
   }
 
   search = (query) => {
-    giphy('IOBX82HC8i1I3aLgSwL1MEBFvwXcBdEr').search({
-    q: query,
-    rating: 'g',
-    limit: 10
+    giphy('IOBX82HC8i1I3aLgSwL1MEBFvwXcBdEr').search(
+    {
+      q: query,
+      rating: 'g',
+      limit: 10
     }, (err, res) => {
-        //console.log(res);
-        this.setState({
-          gifs: res.data
-        });
+      //console.log(res);
+      this.setState({
+        gifs: res.data
+      });
     });
   }
 
@@ -44,7 +45,7 @@ class App extends Component {
           </div>
         </div>
         <div className="right-scene">
-          <GifList gifs={this.state.gifs} />
+          <GifList gifs={this.state.gifs} selectedGif={this.selectedGif}/>
         </div>
       </div>
     )
